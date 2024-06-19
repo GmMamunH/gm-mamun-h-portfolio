@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import SocialLink from "./components/SocialLink";
-import About from "./components/About";
+// import About from "./components/About";
 import Contact from "./components/Contact"
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <>
       <NavBar />
       <Home />
-      <About/>
+      {/* <About/> */}
       <Contact/>
 
       <SocialLink />

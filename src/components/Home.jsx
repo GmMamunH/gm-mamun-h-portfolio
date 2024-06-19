@@ -19,7 +19,7 @@ const Home = () => {
                 500,
                 "I'm An Android App Developer.", // initially rendered starting point
                 1000,
-                "I'm A Full Stock Web Developer.",
+                "I'm A React Developer.",
                 1000,
               ]}
               speed={50}
