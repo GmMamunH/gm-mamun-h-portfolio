@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="h-screen w-full bg-gradient-to-t from-black to-gray-500 px-3 md:px-6 "
+      className="h-full w-full bg-gray-800 py-16 px-3 md:px-6"
     >
       <div className="text-center py-6 text-white">
         <p className="text-4xl underline py-3 font-bold">Contact</p>
@@ -17,6 +17,7 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder="Enter your name"
+            required
             className="p-2 border-2 rounded-md focus:outline-none bg-transparent text-white"
           />
      
@@ -24,6 +25,7 @@ const Contact = () => {
             type="text"
             name="email"
             placeholder="Enter your email"
+            required
             className="p-2 border-2 my-6 rounded-md focus:outline-none bg-transparent text-white"
           />
 
@@ -31,6 +33,7 @@ const Contact = () => {
             name="message"
             rows="10"
             placeholder="Enter your message"
+            required
             className="p-2 border-2 rounded-md focus:outline-none bg-transparent text-white"
           ></textarea>
 

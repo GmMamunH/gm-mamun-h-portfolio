@@ -11,10 +11,11 @@ const NavBar = () => {
     { id: 2, link: "about" },
     { id: 3, link: "portfolio" },
     { id: 4, link: "experience" },
-    { id: 5, link: "contact" },
+    { id: 5, link: "skill" },
+    { id: 6, link: "contact" },
   ];
   return (
-    <div className=" flex justify-between items-center w-full h-20 bg-slate-600 text-white fixed px-3 md:px-6">
+    <div className=" flex justify-between items-center w-full h-20 z-50 bg-slate-600 text-white fixed px-3 md:px-6">
       <div className="text-3xl font-logoFont font-bold italic cursor-pointer capitalize hover:scale-105 hover:text-red-700 duration-500">
         mamun
       </div>
@@ -24,7 +25,7 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="cursor-pointer text-white font-medium capitalize hover:scale-105 duration-500 hover:text-red-700"
+            className="cursor-pointer text-white font-medium capitalize hover:scale-110 duration-500 "
           >
             <Link to={link} smooth duration={500}>
               {link}

@@ -6,10 +6,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div
-      name="home"
-      className="h-full pt-32 pb-12 bg-gradient-to-b from-black to-gray-800 px-3 md:px-6"
-    >
+    <div name="home" className="h-full pt-32 pb-12 bg-gray-800 px-3 md:px-6">
       <div className="flex flex-col justify-between items-center gap-10  md:flex-row max-w-screen-lg mx-auto ">
         <div className=" text-center text-white">
           <h1 className="text-3xl text-white font-bold md:text-4xl">
@@ -29,10 +26,8 @@ const Home = () => {
           </h1>
           {/* ======= */}
           <p className="text-2xl text-justify my-6 md:text-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
-            ex, reiciendis est magni, hic, et reprehenderit officiis at sit
-            accusantium exercitationem iusto inventore quos? Quas, tempore.
-            Iusto ipsa saepe non.
+            With a passion for technology and a keen interest in programming, I
+            have dedicated myself to the world of software development.
           </p>
           <div>
             <Link
