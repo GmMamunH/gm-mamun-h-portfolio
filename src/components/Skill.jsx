@@ -30,11 +30,8 @@ const Skill = () => {
       className="h-full w-full bg-gray-800 px-3  py-16 md:px-6 "
     >
       <div className="text-center py-6 text-white">
-        <p className="text-2xl"> Why Choose Me </p>
-        <p className="text-4xl  py-3 font-bold">
-          {" "}
-          My Experience Area{" "}
-        </p>
+        <p className="text-2xl border-b-4 border-gray-500 inline"> Why Choose Me </p>
+        <p className="text-4xl  py-4 font-bold">My Experience Area</p>
       </div>
 
       <div className="grid grid-cols-2 text-6xl  md:grid-cols-3 md:text-9xl text-white gap-10 max-w-screen-lg mx-auto">

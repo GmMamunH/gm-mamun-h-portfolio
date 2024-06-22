@@ -31,7 +31,7 @@ const Home = () => {
           </p>
           <div>
             <Link
-              to="contact"
+              to="portfolio"
               smooth
               duration={500}
               className="group w-fit flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 rounded-md text-2xl"

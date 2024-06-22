@@ -7,8 +7,8 @@ const Contact = () => {
       className="h-full w-full bg-gray-800 py-16 px-3 md:px-6"
     >
       <div className="text-center py-6 text-white">
-        <p className="text-4xl underline py-3 font-bold">Contact</p>
-        <p className="text-2xl">Submit the form below to get in touch with me:</p>
+        <p className="text-4xl border-b-4 border-gray-500 inline font-bold">Contact</p>
+        <p className="text-2xl py-4">Submit the form below to get in touch with me</p>
       </div>
 
       <div className="flex justify-center items-center">

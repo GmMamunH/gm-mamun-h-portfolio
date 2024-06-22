@@ -17,8 +17,8 @@ const Experience = () => {
   return (
     <div name="experience" className="h-full py-16 bg-gray-800 px-3 md:px-6">
       <div className="text-center py-6 text-white">
-        <p className="text-4xl underline py-3 font-bold">Experience</p>
-        <p className="text-2xl">These are the technologies I've worked with:</p>
+        <p className="text-4xl border-b-4 border-gray-500 inline font-bold">Experience</p>
+        <p className="text-2xl py-4">These are the technologies I've worked with</p>
       </div>
 
       <div className="grid grid-cols-3 text-6xl  md:grid-cols-6 md:text-9xl text-white gap-10 max-w-screen-lg mx-auto ">
