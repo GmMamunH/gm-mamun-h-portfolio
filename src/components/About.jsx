@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 const About = () => {
   const about = [
@@ -42,7 +43,16 @@ const About = () => {
         "Looking ahead, I am excited to tackle new and challenging projects that push the boundaries of what technology can achieve. My goal is to refine my expertise as an Android app and full stack web developer, while also exploring new areas of software development. I aspire to work on innovative solutions that make a positive impact and collaborate with fellow professionals who share my passion for technology and creativity.",
     },
   ];
-
+  // ===================
+  const textStyle = {
+    maxWidth: "100%",
+    display: "-webkit-box",
+    WebkitBoxOrient: "vertical",
+    WebkitLineClamp: 3,
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+  };
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div name="about" className="h-full w-full bg-gray-800 py-16 px-3 md:px-6">
       <div className="text-center py-6 text-white">
@@ -51,14 +61,28 @@ const About = () => {
         </p>
         {/* <p className="text-2xl py-4">Md Mamun Hossain: Android App and Full Stack Web Developer</p> */}
       </div>
-      <div className="max-w-screen-lg mx-auto">
-        {about.map(({ id, title, details, details2 }) => (
-          <div key={id}>
-            <p className="text-3xl pt-4 pb-2 text-white font-bold">{title}</p>
-            <p className="text-2xl text-white text-justify">{details}</p>
-            <p className="text-2xl pt-2 text-white text-justify">{details2}</p>
+      <div className="flex flex-col justify-center items-center">
+        <div style={isOpen ? null : textStyle}>
+          <div className="max-w-screen-lg mx-auto">
+            {about.map(({ id, title, details, details2 }) => (
+              <div key={id}>
+                <p className="text-3xl pt-4 pb-2 text-white font-bold">
+                  {title}
+                </p>
+                <p className="text-2xl text-white text-justify">{details}</p>
+                <p className="text-2xl pt-2 text-white text-justify">
+                  {details2}
+                </p>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className=" bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer px-6 py-3 rounded-md text-1xl mt-5 text-white"
+        >
+          {isOpen ? "Read less..." : "Read more..."}
+        </button>
       </div>
     </div>
   );
